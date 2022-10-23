@@ -14,17 +14,28 @@
 </head>
 <body>
     <header class="main-header">
+        <div class="main-nav__logo">
+            <a href="./home.html">
+                <img src="images/logo/logo.svg" alt="Serendipity logo with light pinkish background and dark pinkish background">
+            </a>
+        </div>
         <nav class="main-nav">
-            <div class="main-nav__logo">
-                <a href="./home.html">
-                    <img src="images/logo/logo.svg" alt="Serendipity logo with light pinkish background and dark pinkish background">
-                </a>
-            </div>
             <button class="toggle-btn">
                 <span class="toggle-btn__stack"></span>
                 <span class="toggle-btn__stack"></span>
                 <span class="toggle-btn__stack"></span>
             </button>
+            <div class="main-nav__desktop">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item"><a href="artifacts/artifacts.html">Artifacts</a></li>
+                    <li class="main-nav__item"><a href="drawings/drawings.html">Drawings</a></li>
+                    <li class="main-nav__item"><a href="wax/wax.html">Wax</a></li>
+                </ul>
+                <form action="/home.html" method="post" class="main-nav__search">
+                    <input type="text" name="search" class="main-nav__search-bar">
+                    <button class="btn">Search</button>
+                </form>
+            </div>
         </nav>
     </header>
 
